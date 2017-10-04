@@ -55,7 +55,9 @@ class App extends Component {
     })
     return (
       <div className="App">
-        Your Task List: 
+        <div>
+        Your Task List:
+        </div> 
         <input type='text' value={this.state.value} onChange={this.handleChange}/>
         <button onClick = {this.handleSubmit}>ADD TASK</button>
         {tasks}
